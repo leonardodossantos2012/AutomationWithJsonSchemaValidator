@@ -45,16 +45,17 @@ Então valido o schema da API
 Para executar a automação basta executar os seguintes comandos no terminal:
 ```sh
   cd C:\{PATH}\testCaseWithTestTemplate
-  robot -d ./results .\testCase\validarTestTemplate.robot
+  robot -d ./results .\Resource\ValidarContratoAPI.robot
 ```
 E devera aparecer a seguinte saída:
 ```robotframework
 ==============================================================================
-ValidarJsonSchema
+ValidarContratoAPI
 ==============================================================================
-Cenário 01 - Validar contrato da API                                  | PASS |
+Cenário 01 - Validar contrato da API do seu zé                        | PASS |
 ------------------------------------------------------------------------------
-ValidarJsonSchema                                                     | PASS |
+ValidarContratoAPI                                                    | PASS |
 1 test, 1 passed, 0 failed
 ==============================================================================
+
 ```
