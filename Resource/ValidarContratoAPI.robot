@@ -6,9 +6,9 @@ Library         JsonValidator
 ${URL}              http://localhost:3000
 
 *** Test Cases ***
-Cenário 01 - Validar contrato da API
+Cenário 01 - Validar contrato da API do seu zé
     Dado que leonardo efetua um get na rota
-    Então valido o schema da API
+    Então Leonardo valida se o contrato da API esta correto
 
 *** Keywords ***
 Dado que leonardo efetua um get na rota
@@ -17,5 +17,5 @@ Dado que leonardo efetua um get na rota
     ${RESPOSTA}  Get on Session     data     ${URL}/data    headers=${headers}
     SET GLOBAL VARIABLE  ${RESPOSTA}
 
-Então valido o schema da API
+Então Leonardo valida se o contrato da API esta correto
     Validate Jsonschema From File	  ${RESPOSTA.json()}   ${CURDIR}/JsonSchema.json
